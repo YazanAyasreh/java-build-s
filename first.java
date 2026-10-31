@@ -304,5 +304,147 @@ public class first {
 
         int sum23 = (10 + 5) * 2; // output is 30
         System.out.println(sum23);
+
+
+
+        //              space
+
+        // now will learn (Java Strings) and explain how can do it:
+        String txt = "Hello World";
+        System.out.println(txt); // output is Hello World
+
+        String txt1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        System.out.println("The length of the txt string is: " + txt1.length()); // output is The length of the txt string is: 26
+
+        String txt2 = "Hello World";
+        System.out.println(txt2.toUpperCase()); // output is HELLO WORLD by using the toUpperCase() method to convert the string to uppercase letters
+        System.out.println(txt2.toLowerCase()); // output is hello world by using the toLowerCase() method to convert the string to lowercase letters
+
+        String txt3 = "Hello World";
+        System.out.println(txt3.indexOf("World")); // output is 6 by using the indexOf() method to return the index of the first occurrence of the specified value
+
+        String txt4 = "Hello World";
+        System.out.println(txt4.replace("World", "Java")); // output is Hello Java by using the replace() method to replace a specified value with another value in a string
+
+        String txt5 = "Hello World";
+        System.out.println(txt5.substring(0, 5)); // output is Hello by using the substring() method to extract a part of a string
+
+        String txt6 = "Hello World";
+        System.out.println(txt6.charAt(0)); // output is H by using the charAt() method to return the character at a specified index in a string
+
+        String txt7 = "Hello World";
+        String txt8 = "Hello World";
+        System.out.println(txt7.equals(txt8)); // output is true by using the equals()
+
+        String txt9 = "Hello World";
+        String txt10 = "hello world";
+        System.out.println(txt9.equalsIgnoreCase(txt10)); // output is true by using the equalsIgnoreCase() method to compare two strings, ignoring case considerations
+
+        String txt11 = "   Hello World   ";
+        System.out.println("Before: [" + txt11 + "]"); // output is Before: [   Hello World   ] by using the trim() method to remove whitespace from both ends of a string
+        System.out.println("After: [" + txt11.trim() + "]"); // output is Hello World by using the trim() method
+
+
+
+        //              space
+
+        // now want to learn (Java String Concatination) and explain how can do it:
+        String firstName = "John";
+        String lastName = "Doe";
+        System.out.println(firstName + " " + lastName); // output is John Doe by using the + operator to concatenate two strings
+
+        String firstName1 = "John";
+        int age1 = 30;
+        System.out.println("name: " + firstName1 + ", Age: " + age1); // output is name: John, Age: 30 by using the + operator to concatenate a string and an integer
+
+
+
+        //              space
+
+        // now want to learn (Java String Numbers and Strings) and explain how can do it:
+        int x1 = 10;
+        int y1 = 20;
+        System.out.println(x1 + y1); // output is 30 by using the + operator to add two integers / numbers
+
+        String x2 = "10";
+        String y2 = "20";
+        System.out.println(x2 + y2); // output is 1020 by using the + operator to concatenate two strings
+
+        int x3 = 10;
+        String y3 = "20";
+        System.out.println(x3 + y3); // output is 1020 by using the + operator to concatenate an integer and a string
+
+
+
+        //              space
+
+        // now want to learn (Java String Special Characters) and explain how can do it:
+        // The sequence \"  inserts a double quote in a string:
+        String txt12 = "We are the so-called \"Vikings\" from the north.";
+        System.out.println(txt12); // output is We are the so-called "Vikings" from the north. by using the \" to escape the double quote character
+
+        // The sequence \'  inserts a single quote in a string:
+        String txt13 = "It\'s alright.";
+        System.out.println(txt13); // output is It's alright. by using the \' to escape the single quote character
+
+        //The sequence \\  inserts a single backslash in a string:
+        String txt14 = "The character \\ is called backslash.";
+        System.out.println(txt14); // output is The character \ is called backslash. by using the \\ to escape the backslash character
+
+        // we have another sequences like (\n for: New Line, (\r for: Carriage Return), (\t for: Tab), (\b for: Backspace), (\f for: Form Feed) and we can use them in the string like this:
+        String txt15 = "Hello\nWorld!";
+        System.out.println(txt15); // output is Hello
+
+        String txt16 = "Hello\rWorld!";
+        System.out.println(txt16); // output is World! by using the \r to escape the carriage return character
+
+        String txt17 = "Hello\tWorld!";
+        System.out.println(txt17); // output is Hello    World! by using the \t to escape the tab character
+
+        String txt18 = "Hello\bWorld!";
+        System.out.println(txt18); // output is HelloWorld! by using the \b to escape the backspace character
+
+        String txt19 = "Hello\fWorld!";
+        System.out.println(txt19); // output is HelloWorld! by using the \f to escape the form feed character
+
+
+
+        //              space
+
+        // now we want to learn (Java Maths) and explain how can do it:
+        Math.max(5, 10); // output is 10 by using the Math.max() method to return the largest of two numbers
+        Math.min(5, 10); // output is 5 by using the Math.min() method to return the smallest of two numbers
+        Math.sqrt(64); // output is 8.0 by using the Math.sqrt() method to return the square root of a number
+        Math.abs(-4.7); // output is 4.7 by using the Math.abs() method to return the absolute value of a number
+        Math.pow(2,8); // output is 256.0 by using the Math.pow() method to return the value of a number raised to a power\
+        Math.round(4.7); // output is 5 by using the Math.round() method to round a number to the nearest integer
+        Math.ceil(4.4); // output is 5.0 by using the Math.ceil() method to round a number upward to its nearest integer
+        Math.floor(4.7); // output is 4.0 by using the Math.floor() method to round a number downward to its nearest integer
+        Math.random(); // output is a random number between 0.0 and 1.0 by using the Math.random() method to return a random number between 0.0 and 1.0
+        int RandomNumber = (int)(Math.random() * 101); /* output is a random number between 0 and 100 by using the Math.random() method to return a random number between 0.0 and 1.0 and then multiplying it by 101 to get a number between 0 and 100
+        and then casting it to an integer to get rid of the decimal part */
+
+
+
+        //              space
+
+        // now we want to learn (Java Booleans) and explain how can do it:
+        boolean isJavaFun1 = true; // output is true by using the boolean data type
+        boolean isJavaFun2 = false; // output is false by using the boolean data type
+        System.out.println(isJavaFun1); // output is true because the value of isJavaFun1 is true
+        System.out.println(isJavaFun2); // output is false because the value of isJavaFun1 is true and the value of isJavaFun2 is false
+
+        int x4 = 10;
+        int y4 = 9;
+        System.out.println(x4 > y4); // output is true by using the > operator to compare two numbers
+        System.out.println(x4 < y4); // output is false by using the < operator to compare two numbers
+        System.out.println(x4 == y4); // output is false by using the == operator to compare two numbers
+
+        System.out.println(10 > 9); // output is true by using the > operator to compare two numbers because 10 is greater than 9
+
+        int x5 = 10;
+        System.out.println(x5 == 10); // output is true by using the == operator to compare two numbers because variable x5 is equal to 10\
+
+        System.out.println(10 == 15); // output is false by using the == operator to compare two numbers because 10 is not equal to 15
     }
 }
